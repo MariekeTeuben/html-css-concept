@@ -1,3 +1,13 @@
+/*
+Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);
+ */
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -13,6 +23,30 @@
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+: root {
+    --purple: #5722CD;
+    --blue: #4845E4;
+    --button-background-color: #ED4385;
+    --default-text-color: #0C0C0C;
+    --floating-text-color: #F2F0FF;
+    --projects-background-color: #F3F6F9;
+    --service-text-color: #7A7A7A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
