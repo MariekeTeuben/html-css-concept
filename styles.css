@@ -104,6 +104,34 @@ article {
     margin: 10px;
 }
 
+.content-project {
+    border: 1px dashed seagreen;
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 5px;
+    margin: 10px 75px 10px 15px;
+}
+
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+a:visited {
+    color: white;
+}
+
 /* --------------- 3.2 Other --------------------------- */
 
 .navigationbar {
@@ -118,7 +146,7 @@ article {
     display: flex;
     flex-direction: row;
     flex-basis: 300px;
-    justify-content: space between;
+    justify-content: space-between;
     gap: 30px;
     border: 1px solid blue;
 }
@@ -157,10 +185,54 @@ button {
 }
 
 
-/* --------------- 4.2 Introduction ------------------- *
+/* --------------- 4.2 Introduction ------------------- */
 
 .introduction {
     color: var(--purple);
+}
+
+
+/* --------------- 4.3 Projects ------------------- */
+
+.projects {
+    flex-basis: 1200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 5px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px dotted darkred;
+}
+
+.rollingstone {
+    width: 100%;
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: row;
+}
+
+.variety {
+    width: 100%;
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.worth {
+    width: 100%;
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: row;
+}
+
+.article-link, .article-link:visited, .article-link:hover {
+    color: var(--purple);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    text-decoration-line: none;
 }
 
 
