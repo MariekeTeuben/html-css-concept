@@ -128,7 +128,7 @@ img {
     flex-shrink: 1;
 }
 
-a:visited {
+a, a:visited, a:hover {
     color: white;
 }
 
@@ -188,6 +188,9 @@ button {
 /* --------------- 4.2 Introduction ------------------- */
 
 .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--purple);
 }
 
@@ -233,6 +236,35 @@ button {
     font-size: 0.8em;
     text-transform: uppercase;
     text-decoration-line: none;
+}
+
+/* --------------- 4.4 Services ------------------- */
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border: 1px dotted midnightblue;
+}
+
+.service-block {
+    flex-basis: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0 20px 10px 10px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gold;
+}
+
+.service-block-text {
+    color: var(--service-text-color);
+    font-size: 0.8em;
 }
 
 
